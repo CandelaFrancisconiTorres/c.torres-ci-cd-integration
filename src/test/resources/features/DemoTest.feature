@@ -24,8 +24,8 @@ Feature: Demo test
     Then message about <status> login is displayed
     Examples:
       | login        | password             | status        |
-      | michael     | SuperSecretPassword! | successful    |
-      | michael     | wrongpass            | unsuccessful  |
+      | claire     | SuperSecretPassword! | successful    |
+      | claire     | wrongpass            | unsuccessful  |
       | unknown      | anypass              | successful    |
 
   @ui
@@ -36,6 +36,6 @@ Feature: Demo test
     When user clicks link 'Form Authentication'
       And user inputs credentials
       | login     | password            |
-      | michael | SuperSecretPassword!|
+      | claire | SuperSecretPassword!|
     And user click Login button
     Then message about unsuccessful login is displayed
